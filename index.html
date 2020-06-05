@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FLOR GIS</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i|Poppins:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link  rel="icon"   href="imgs/icon.png" type="image/png" />
+    </head>
+    <body>
+        <header>
+            <button class="toggle-nav">
+                  <span>></span>
+            </button>
+            <ul class="nav">
+                  <li class="loud"><a href="#home">Home</a></li>
+                  <li class="loud"><a href="#recetas">Recetas</a></li>
+                  <li class="loud"><a href="#essen">Essen</a></li>
+                  <li class="loud"><a href="#promos">Combos y promos</a></li>
+                  <li class="loud"><a href="#contacto">Contacto</a></li>
+            </ul>
+    </header>
+          
+    <div id="home">
+        <a class="link-insta-fijo" href="https://www.instagram.com/essenflora/?hl=es-la" target="_blank"> <img class="link-insta" src="imgs/insta.png" alt="instagram"></a>
+        <img class="logo-inicio" src="imgs/LOGOOK1.png" alt="flor gis"/>
+        <div class="nombre">
+            <div class="foto-flor"><img class="logo-flor-gis" src="imgs/principal.png" alt="Flor Gis"/></div>
+            <div class="frase-flor">
+                <div id="maquinas"></div>
+            </div>
+        </div>
+           
+        </div>
+    
+    <div id="recetas">
+        <div class="icon-container">
+            <img src="imgs/LOGOOK33.png"  class="logo3"/>
+                
+        </div>
+        <div class="contenedor-filtros">
+            <div class="flex-filtros">
+                <select id="filtro-tipo-comida">
+                </select>
+                <select id="filtro-para">
+                </select>
+                <select id="filtro-horario">
+                </select>
+            <button class="buscar">Buscar</button>
+            </div>
+        </div>
+                
+        <div class="contenedor-recetas">
+            <div class="flex">
+            </div>
+        </div>
+        </div>
+
+    <div id="essen">
+        <div class="main-border-box">
+            <img class="essen-logo" src="imgs/essen.png" alt="Essen"/>
+            <h2>¿Por qué productos Essen?</h2>
+            <i id="caracteristicas" class="fas fa-utensils"></i> <p>Concentra y realza el sabor de los alimentos, haciendolos más saludables.</p>
+            <i id="caracteristicas" class="fas fa-hand-holding-usd"></i> <p>Ahorrás dinero y contribuis con el medio ambiente, consumiendo menos gas o electricidad.</p>
+            <i id="caracteristicas" class="fas fa-clock"></i> <p>Ahorrás tiempo, cocinando más rápido y con menos pasos en preparaciones.</p>
+            <i id="caracteristicas" class="far fa-check-square"></i> <p>Productos realizados con materiales de alta calidad y resistencia, ideales para tu cocina.</p>
+        </div>
+        <h3 class="linea">LINEA TERRA</h3>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="essen/terra1.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/terra2.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/terra3.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/terra4.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/terra5.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/terra6.jpg" height="200" width="400" alt="" />
+                </div> 
+                <div class="slide">
+                    <img src="essen/essen.jpg" height="200" width="400" alt="" />
+                </div>                 
+            </div>
+        </div>
+
+        <h3 class="linea">LINEA AQUA</h3>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="essen/aqua1.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/aqua2.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/aqua3.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/aqua4.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/aqua5.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/aqua6.jpg" height="200" width="400" alt="" />
+                </div> 
+                <div class="slide">
+                    <img src="essen/essen.jpg" height="200" width="400" alt="" />
+                </div>                         
+            </div>
+        </div>
+
+        <h3 class="linea">LINEA MARSALA</h3>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="essen/marsala1.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/marsala2.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/marsala3.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/marsala4.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/marsala5.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/marsala6.jpg" height="200" width="400" alt="" />
+                </div>  
+                <div class="slide">
+                    <img src="essen/essen.jpg" height="200" width="400" alt="" />
+                </div>                        
+            </div>
+        </div>
+
+        <h3 class="linea">LINEA PINK / TERRA PINK</h3>
+        <div class="slider">
+            <div class="slide-track">
+                <div class="slide">
+                    <img src="essen/pink1.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/pink2.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/pink3.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/pink4.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/pink5.jpg" height="200" width="400" alt="" />
+                </div>
+                <div class="slide">
+                    <img src="essen/pink6.jpg" height="200" width="400" alt="" />
+                </div> 
+                <div class="slide">
+                    <img src="essen/pink1.jpg" height="200" width="400" alt="" />
+                </div>                 
+            </div>
+        </div>
+    </div>
+
+    <div id="promos">
+        <h1 class="titulo-combos">COMBOS Y PROMOS</h1>
+        <p class="revendedora"> Soy revendedora oficial de Essen y tengo los mejores precios para vos</p>
+        <img class="cuotas" src="imgs/12cuotas.png" alt="12 cuotas sin interés"/>
+
+        <div class="codigos">
+            <div id="trabajos" class="punchline">
+                <div class="polaroid">
+                    <img src="essen/combo1.jpg" alt="combo 1" style="width:100%">
+                    <div class="container">
+                    <h6>LINEA TERRA</h6>
+                    <div class="link"><a href="https://wa.me/541134319525" target="_blank">CONSULTAME</a></div>
+                </div>
+                </div>
+                <div class="polaroid">
+                    <img src="essen/combo2.jpg" alt="combo 2" style="width:100%">
+                    <div class="container">
+                    <h6>LINEA MARSALA</h6>
+                    <div class="link"><a href="https://wa.me/541134319525" target="_blank">CONSULTAME</a></div>
+                </div>
+                </div>
+                
+                <div class="polaroid">
+                    <img src="essen/combo3.jpg" alt="combo 3" style="width:100%">
+                    <div class="container">
+                    <h6>LINEA AQUA</h6>
+                    <div class="link"><a href="https://wa.me/541134319525" target="_blank">CONSULTAME</a></div>
+                </div>
+                </div>
+                
+                
+                <div class="polaroid">
+                    <img src="essen/combo4.jpg" alt="combo 4" style="width:100%">
+                    <div class="container">
+                    <h6>LINEA MOKA</h6>
+                    <div class="link"><a href="https://wa.me/541134319525" target="_blank">CONSULTAME</a></div>
+                </div>
+                </div>
+                      
+                <div class="polaroid">
+                    <img src="essen/combo5.jpg" alt="combo 5" style="width:100%">
+                    <div class="container">
+                    <h6>LINEA MARSALA</h6>
+                    <div class="link"><a href="https://wa.me/541134319525" target="_blank">CONSULTAME</a></div>
+                </div>
+                </div>
+                
+                <div class="polaroid">
+                    <img src="essen/combo6.jpg" alt="combo 6" style="width:100%">
+                    <div class="container">
+                    <h6>LINEA AQUA</h6>
+                    <div class="link"><a href="https://wa.me/541134319525" target="_blank">CONSULTAME</a></div>
+                    </div>
+                </div>
+                
+                
+            
+        </div>
+        </div>
+    </div>
+
+    <div id="contacto">
+        <h1 class="titulo-contacto">CONTACTAME</h1>
+
+    <div class="celulares">
+    <div class="medios-contacto">
+            <div class="instagram">
+                <a class="link-iphone" href="https://www.instagram.com/essenflora/?hl=es-la" target="_blank"> <img class="iphone" src="imgs/iphone-instagram.png" alt="instagram"></a>
+            </div>
+
+            <div class="whatsapp">
+                <a class="link-iphone" href="https://wa.me/541134319525" target="_blank"> <img class="iphone" src="imgs/iphone-wa.png" alt="whats app"></a>
+            </div>
+
+            <div class="mail">
+                <a class="link-iphone" href=" https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=essenflora@gmail.com " target="_blank"> <img class="iphone" src="imgs/iphone-mail.png" alt="Mail"></a>
+            </div>
+    </div>
+    </div>
+        <script type="text/javascript" src="jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="restaurant.js"></script>
+        <script type="text/javascript" src="listado.js"></script>
+        <script type="text/javascript" src="aplicacion.js"></script>
+    </body>
+</html>

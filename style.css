@@ -1,0 +1,855 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+}
+
+/*MENU*/
+@import url(https://fonts.googleapis.com/css?family=Allan);
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans);
+/* General styles */
+
+/* Style for header */
+header {
+ z-index: 1000;
+ position: relative;
+ background-color: #2c353a;
+ position: fixed;
+ width: 100%;
+}
+header ul.nav {
+ overflow: hidden;
+}
+header ul.nav li {
+ position: relative;
+ float: left;
+ width: 20%;
+}
+header ul.nav li a {
+ display: block;
+ height: 50px;
+ opacity: 0;
+ font: 400 1.15em 'Pacifico';
+ line-height: 50px;
+ color: #f9d5d5;
+ text-decoration: none;
+ text-align: center;
+ cursor: default;
+ -webkit-transition: all 0.25s ease;
+ -moz-transition: all 0.25s ease;
+}
+header ul.nav li a:hover {
+ color: #fff;
+ background-color: #222b2f;
+}
+@media screen and (max-width: 600px) {
+ header ul.nav li {
+   float: none;
+   width: 100%;
+}
+ header ul.nav li a {
+   height: 0;
+}
+}
+/* Style for header with active class name */
+header.active ul.nav li a {
+ height: 80px;
+ opacity: 1;
+ line-height: 120px;
+ cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+ header.active ul.nav li a {
+   height: 60px;
+   line-height: 60px;
+   border-bottom: 1px solid #222b2f;
+}
+}
+/* Style for the plus button */
+button.toggle-nav {
+ position: absolute;
+ top: 50px;
+ left: calc(50% - 30px);
+ width: 60px;
+ height: 35px;
+ background-color: #aa0024;
+ font: 400 1.2em 'Allan', serif;
+ color: #fff;
+ border: none;
+ line-height: 30px;
+ vertical-align: middle;
+ outline: none;
+ cursor: pointer;
+ border-bottom-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+ -webkit-transition: all 0.25s ease;
+ -moz-transition: all 0.25s ease;
+}
+button.toggle-nav:hover {
+ height: 50px;
+}
+button.toggle-nav span {
+ display: block;
+ -webkit-transform: rotate(90deg);
+ -moz-transform: rotate(90deg);
+ -webkit-transition: all 0.25s ease;
+ -moz-transition: all 0.25s ease;
+}
+/* Style for the plus button when header has active classe name */
+header.active button.toggle-nav {
+ top: 80px;
+ background-color: #aa0024;
+}
+header.active button.toggle-nav span {
+ -webkit-transform: rotate(270deg);
+ -moz-transform: rotate(270deg);
+}
+@media screen and (max-width: 600px) {
+ button.toggle-nav {
+   top: 0;
+   left: 15px;
+}
+ header.active button.toggle-nav {
+   top: 305px;
+}
+}
+@media screen and (max-width: 600px) {
+ section {
+   padding: 1.5em;
+}
+}
+
+
+/*HOME*/
+#home{
+height: 100%;
+background-color: rgb(255, 255, 255);
+}
+
+
+.logo-inicio{
+padding-top: 100px;
+height: 150px;
+width: 15%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.nombre{
+display: flex;
+width: 70%;
+font-family: 'Bebas Neue', cursive;
+color: #aa0024; 
+font-size: 22px;
+font-weight: 800;
+text-align: justify;
+margin-left: auto;
+margin-right: auto;
+}
+
+.logo-flor-gis{
+flex-wrap: nowrap;
+margin-top: -80px;
+height: 450px;
+display: block;
+}
+
+.link-insta-fijo{
+display: flex;
+position: fixed;
+margin-top: 50px;
+}
+
+.link-insta{
+height: 50px;
+width: 110px;
+justify-content: flex-end;
+}
+
+/*ESSEN PROD*/
+#essen{
+background-color: #f9d5d5;
+width: auto;
+overflow: hidden;
+margin: 0;
+height: 1500px;
+display: block;
+padding-top: 50px;
+}
+
+.main-border-box{
+font-family: 'Patrick Hand', cursive;
+color: #000000; 
+font-size: 18px; 
+font-weight: 400; 
+width: 60%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+height: 375px;
+text-align: center; 
+background: white; 
+overflow: hidden; 
+padding: 15px; 
+border-radius: 35px 0px 35px 0px; 
+-moz-border-radius: 35px 0px 35px 0px; 
+-webkit-border-radius: 35px 0px 35px 0px; 
+border: 2px solid #aa0024;
+
+}
+
+.main-border-box:hover{
+box-shadow: 0 0 20px #aa0024;
+}
+
+.main-border-box i{
+color: #ff6500;
+}
+
+.essen-logo{
+width: 100px;
+height: 100px;
+margin-left: 0px;
+margin-top: -5px;
+}
+
+.linea{
+font-family: 'Patrick Hand', cursive;
+color: #aa0024;
+margin-top: 15px;
+margin-bottom: -70px;
+text-align: center;
+}
+.slider {
+background: #f9d5d5;
+
+height: 200px;
+margin: 70px auto auto auto;
+overflow: hidden;
+position: relative;
+width: 800px;
+}
+.slider::before, .slider::after {
+background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(255, 255, 255, 0)));
+background: linear-gradient(to right, #eea9a9 0%, rgba(255, 255, 255, 0) 100%);
+content: "";
+height: 300px;
+position: absolute;
+width: 100px;
+z-index: 2;
+}
+.slider::after {
+right: 0;
+top: 0;
+-webkit-transform: rotateZ(180deg);
+        transform: rotateZ(180deg);
+}
+.slider::before {
+left: 0;
+top: 0;
+}
+.slider .slide-track {
+-webkit-animation: scroll 10s linear infinite;
+        animation: scroll 10s linear infinite;
+display: -webkit-box;
+display: flex;
+width: calc(250px * 14);
+}
+.slider .slide {
+height: 200px;
+width: 450px;
+}
+
+
+@-webkit-keyframes scroll {
+0% {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+100% {
+  -webkit-transform: translateX(calc(-250px * 7));
+          transform: translateX(calc(-250px * 7));
+}
+}
+
+@keyframes scroll {
+0% {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+100% {
+  -webkit-transform: translateX(calc(-250px * 7));
+          transform: translateX(calc(-250px * 7));
+}
+}
+
+/*PROMOS*/
+#promos{
+background-color: #f9d5d5;
+height: 100%;
+display: block;
+width: auto;
+overflow: hidden;
+
+}
+
+.titulo-combos{
+font-family: 'Pacifico';
+color: #aa0024;
+margin-top: -80px;
+padding-top: 70px;
+text-align: center;
+font-size: 50px;
+}
+
+.revendedora{
+font-family: 'Patrick Hand', cursive;
+color: #aa0024;
+font-size: 25px;
+margin: auto;
+text-align: center;
+padding-top: 15px;
+}
+
+.cuotas{
+height: 100px;
+width: 50%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.codigos{
+display: flex;
+display: block;
+margin-left: 10%;
+margin-right: auto;
+margin-bottom: 20px;
+}
+
+#trabajos{
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+
+}
+
+div.polaroid {
+  z-index: 100;
+  margin-left: 0px;
+  margin-right: 80px;
+  margin-top: 90px;
+  width: 350px;
+  height: 250px;
+  font-size: 12px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+text-align: center;
+padding: 10px 20px;
+}
+
+
+div.polaroid {
+width: 300px;
+background-color: white;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+margin-bottom: 0px;
+
+}
+
+.polaroid:hover{
+box-shadow: 0 0 20px #aa0024;
+}
+
+.polaroid h6{
+font-family: 'Baloo 2', cursive;
+text-align: center;
+margin-left: -40px;
+font-size: 20px;
+}
+
+div.container {
+text-align: justify;
+width: 300px;
+
+}
+
+.polaroid .link a{
+margin-left: 80px;
+text-align: center;
+font-size: 20px;
+background-color: #aa0024;
+color:white;
+font-family: 'Patrick Hand', cursive;
+}
+
+.link a:hover{
+background-color:#ff3561;
+}
+
+
+/*RECETAS*/
+#recetas{
+height: 3400px;
+display: block;
+background-color: white;
+}
+
+
+.logo3{
+margin: 50px auto 10px auto;
+width: 120px;
+height: 120px;
+}
+
+.icon-container h1{
+font-family: 'Pacifico';
+color: #aa0024;
+margin-bottom: 10px;
+}
+
+h4 {
+position: absolute;
+font-size: 20px;
+font-weight: bold;
+color: white;
+overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;
+background-color: #aa0024;
+padding: 3px;
+border-radius: 60px;
+}
+
+.nombre-puntuacion-container{
+display: flex;
+justify-content: space-between;
+margin-top: -50px;
+}
+
+.informacion-container{
+z-index: 100;
+display: flex;
+align-items: center;
+margin-top: -50px;
+margin-bottom: 4px;
+}
+
+select{
+width: 24%;
+height: 46px;
+margin-top: 22px;
+}
+
+.buscar{
+width: 16%;
+height: 46px;
+margin-top: 22px;
+background-color: #aa0024;
+color: white;
+font-size: 14px;
+font-weight: 400;
+cursor: pointer;
+
+}
+
+.contenedor-recetas {
+width: 100%;
+max-width: 960px;
+height: 100vh;
+margin: 0 auto;
+box-sizing: border-box;
+}
+
+
+.contenedor-filtros {
+width: 100%;
+max-width: 960px;
+height: 90px;
+margin: 0 auto;
+box-sizing: border-box;
+background-color: #f9d5d5;
+margin-bottom: 25px;
+box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flex-filtros {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+.flex {
+height: 1000px;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.flex-item {
+background-color: white;
+width: calc(33.33% - 16px);
+height: 355px;
+margin-bottom: 24px;
+box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.imagen{
+z-index: 90;
+width: 100%;
+height: 55%;
+object-fit: cover;
+}
+
+.receta-descarga{
+width: 40px;
+height: 40px;
+object-fit: cover;
+}
+
+.icon{
+width: 5%;
+margin-bottom: -25px;
+}
+
+.icon-container{
+display: flex;
+align-items: center;
+flex-direction: column;
+
+}
+
+.tipo-comida{
+text-decoration: none;
+font-size: 17px;
+font-weight: 600;
+font-family: 'Open Sans', sans-serif;
+margin-left: 5px;
+margin-right: 15px;
+color: black;
+}
+
+.rubro{
+text-decoration: none;
+opacity: 100%;
+font-size: 17px;
+font-weight: 600;
+font-family: 'Open Sans', sans-serif;
+margin-left: 5px;
+color: black;
+}
+
+.ubicacion-container{
+margin-top: 16px;
+}
+
+select > .placeholder {
+display: none;
+}
+
+.ingredientes-container{
+font-size: 14px;
+display: flex;
+}
+
+select{
+font-weight: 500;
+text-indent: 10%;
+font-size: 13px;
+}
+
+.ingrediente-lista{
+background-color: #aa0024;
+color: white;
+padding: 1px 1px;
+margin-right: 5px;
+font-weight: 300;
+cursor:context-menu;
+align-content: flex-start;
+
+}
+
+.ingrediente-lista:hover{
+background-color: #ff3561; 
+cursor:context-menu;
+}
+
+.buscar:hover{
+background-color: #ff3561; 
+}
+
+
+.informacion{
+padding: 10px;
+}
+
+.nombre-informacion-container{
+width: 85%;
+color: #aa0024;
+}
+
+i{
+color: black;
+}
+
+.descarga-container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+
+.descarga{
+background-color: transparent;
+color: transparent;
+font-size: 14px;
+font-weight: 500;
+cursor: pointer;
+height: 30px;
+width: 40px;
+}
+
+.img-desc{
+width: 70px;
+height: 70px;
+margin-left: 220px;
+margin-top: 50px;
+}
+
+@-webkit-keyframes slidein {
+0% {
+  top: -400px;
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+  top: 0px;
+}
+}
+@keyframes slidein {
+0% {
+  top: -400px;
+  opacity: 0;
+}
+100% {
+  opacity: 1;
+  top: 0px;
+}
+}
+@-webkit-keyframes slideout {
+0% {
+  top: 0;
+  opacity: 1;
+}
+100% {
+  top: -400px;
+  opacity: 0;
+}
+}
+@keyframes slideout {
+0% {
+  top: 0;
+  opacity: 1;
+}
+100% {
+  top: -400px;
+  opacity: 0;
+}
+}
+
+
+/*CONTACTO*/
+#contacto{
+height: 650px;
+background-color: white;
+}
+
+.titulo-contacto{
+font-family: 'Pacifico';
+color: #aa0024;
+padding-top: 70px;
+text-align: center;
+font-size: 50px;
+}
+
+.celulares{
+display: flex;
+margin-left: 17%;
+
+}
+
+.medios-contacto{
+display: flex;
+align-content: flex-start;
+flex-wrap: wrap;
+}
+
+.iphone{
+width: 300px;
+height: 400px;
+}
+
+.iphone:hover{
+width: 320px;
+height: 420px;
+}
+
+
+@media(max-width: 991px) {
+  .main-border-box{
+    font-size: 15px;
+  }
+
+ 
+  #recetas{
+    height: 5000px;
+  }
+  .container {
+    padding: 0 24px;
+  }
+  .flex-item {
+    width: calc(50% - 12px);
+  }
+  #trabajos{
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  
+  }
+  .celulares{
+    display: flex;
+    display: block;
+    margin-left: 10%;
+    margin-right: auto;
+  }
+  .iphone{
+    width: 250px;
+    height: 350px;
+  }
+
+  .iphone:hover{
+    width: 260px;
+    height: 360px;
+  }
+}
+
+@media(max-width: 767px) {
+  .codigos{
+    display: flex;
+    display: block;
+    margin-left: 30%;
+   
+  }
+
+  .logo-inicio{
+    padding-top: 100px;
+    height: 150px;
+    width: 15%;
+    display: block;
+    margin-left: 100px;
+    margin-right: auto;
+  }
+
+  .logo-flor-gis{
+    margin-top: -80px;
+    height: 450px;
+    margin-left: -70px;
+  }
+
+  .frase-flor{
+    margin-top: -130px;
+    margin-left: -250px;
+    width: 600px;
+    height: 130px;
+    font-size: 12px;
+  }
+
+  .link-insta-fijo{
+    display: flex;
+    z-index: 900;
+    margin-left: 100px;
+    margin-top: -5px;
+    background-color: #f9d5d5;
+    border-radius: 70px;
+  }
+
+  .link-insta{
+    width: 80px;
+    height: 40px;
+  }
+ 
+  .main-border-box{
+    font-size: 14px;
+  }
+
+  #recetas{
+    height: 9300px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+  .flex-item {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  #trabajos{
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+  
+  }
+  .iphone{
+    width: 200px;
+    height: 300px;
+  }
+  .iphone:hover{
+    width: 210px;
+    height: 310px;
+  }
+  
+}
+
+
+
+@media(max-width: 400px) {
+
+  .codigos{
+    display: flex;
+    display: block;
+    margin-left: 20%;
+   
+    }
+ 
+  .main-border-box{
+    font-size: 11px;
+  }
+  
+  #recetas{
+    height: 9300px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+  .flex-item {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .titulo-contacto{
+    font-size: 35px;
+  }
+  .celulares{
+    margin-left: 13%;
+    margin-right: auto;
+  }
+
+}
